@@ -1,0 +1,36 @@
+; Horus SDK for Godot: the sample game (coins, a rewarded ad, a purchase, the save with the app's copy and cloud save,
+; a reminder). A whole Godot 4.7 project with the addon in addons/horus_sdk; export build/game.pck (Project > Export >
+; Android > Export PCK/ZIP) and send it with horus-build.mjs.
+config_version=5
+
+[application]
+
+config/name="Horus SDK Demo"
+config/features=PackedStringArray("4.7", "GL Compatibility")
+run/main_scene="res://main.tscn"
+config/icon="res://icon.png"
+boot_splash/bg_color=Color(0.0627, 0.0784, 0.0941, 1)
+boot_splash/show_image=false
+
+[autoload]
+
+Horus="*res://addons/horus_sdk/horus.gd"
+
+[display]
+
+window/size/viewport_width=720
+window/size/viewport_height=1280
+window/stretch/mode="canvas_items"
+window/stretch/aspect="expand"
+window/handheld/orientation=1
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/horus_sdk/plugin.cfg")
+
+[rendering]
+
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
+textures/vram_compression/import_etc2_astc=true
+environment/defaults/default_clear_color=Color(0.0627, 0.0784, 0.0941, 1)

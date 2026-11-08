@@ -1,0 +1,61 @@
+{
+  "name": "Woolly Road",
+  "engine": "godot",
+  "pck": "build",
+  "version": "0.1.0",
+  "versionCode": 1,
+  "appId": "",
+  "icon": "icon.png",
+  "orientation": "portrait",
+  "languages": [
+    "en",
+    "vi"
+  ],
+  "privacyUrl": "",
+  "colors": {
+    "background": "#7ccd4f"
+  },
+  "ads": {
+    "rewarded": [
+      "extra_road",
+      "double_reward",
+      "free_booster",
+      "refill_life",
+      "free_coins"
+    ],
+    "inter": [
+      "level_end"
+    ]
+  },
+  "products": [
+    {
+      "sku": "starter_pack",
+      "usd": 1.99,
+      "consumable": true,
+      "title": "Starter Pack (500 coins + 3 of each booster)"
+    },
+    {
+      "sku": "remove_ads",
+      "usd": 2.99,
+      "consumable": false,
+      "title": "Remove Ads"
+    }
+  ],
+  "remoteConfig": {
+    "inter_every": "2",
+    "booster_price": "60",
+    "life_minutes": "20",
+    "refill_price": "100",
+    "free_coins": "25"
+  },
+  "events": [
+    "level_start",
+    "level_end",
+    "booster_use",
+    "reset",
+    "lives_refill",
+    "daily_gift"
+  ],
+  "support": "support@horusvn.com",
+  "notes": "Woolly Road: farm colour-sort puzzle (sheep, pens, one-way road)."
+}

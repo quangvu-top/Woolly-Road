@@ -1,0 +1,15 @@
+# Godot files use LF; keep them the same on every computer
+* text=auto eol=lf
+*.cmd text eol=crlf
+*.bat text eol=crlf
+*.ps1 text eol=crlf
+*.png binary
+*.jpg binary
+*.ttf binary
+*.otf binary
+*.pck binary
+*.mp4 binary
+# the Horus SDK (and its AGENTS.md copy) is stored byte for byte: never re-format its files
+addons/horus_sdk/** -text
+horus-sdk/** -text
+AGENTS.md -text

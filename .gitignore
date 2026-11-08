@@ -1,0 +1,8 @@
+.godot/
+build/
+build-online/
+horus-sdk/.old/
+# OS / editor clutter
+Thumbs.db
+.DS_Store
+*.tmp
